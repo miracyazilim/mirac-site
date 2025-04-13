@@ -2,81 +2,64 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Miracayazılım - Ana Sayfa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirakayazılım - Ana Sayfa</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: #f2f2f2;
-    }
-
-    header {
-      background-color: #007acc;
-      color: white;
+      font-family: Arial, sans-serif;
       padding: 20px;
-      text-align: center;
+      color: #333;
     }
-
-    nav {
-      background-color: #005f99;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
     .container {
-      padding: 20px;
-    }
-
-    .card {
-      background-color: white;
-      padding: 20px;
-      margin: 20px auto;
       max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    footer {
-      background-color: #007acc;
-      color: white;
-      text-align: center;
+    h1 {
+      color: #0077cc;
+    }
+    .info-box {
+      background-color: #e0f0ff;
       padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      border-left: 5px solid #0077cc;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    pre {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    a.button:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="container">
     <h1>Merhaba, ben Miraç 👋</h1>
     <p>Bu benim ilk web sitem. Yazılıma ilgim var ve burada kendimi geliştiriyorum.</p>
-  </header>
 
-  <nav>
-    <a href="#">Ana Sayfa</a>
-    <a href="#">Hakkımda</a>
-    <a href="#">Projeler</a>
-    <a href="#">İletişim</a>
-  </nav>
-
-  <div class="container">
-    <div class="card">
+    <div class="info-box">
       <h2>HTML Nedir?</h2>
       <p>HTML (HyperText Markup Language), web sayfalarının iskeletini oluşturan işaretleme dilidir. Tarayıcının neyi nasıl göstermesi gerektiğini belirler.</p>
-    </div>
 
-    <div class="card">
-      <h2>HTML ile Neler Yapılır?</h2>
+      <h3>HTML ile Neler Yapılır?</h3>
       <ul>
         <li>Başlık, paragraf, resim gibi içerikler eklenir</li>
         <li>Bağlantılar (linkler) oluşturulur</li>
@@ -84,9 +67,8 @@
       </ul>
     </div>
 
-    <div class="card">
-      <h2>Basit Bir HTML Örneği</h2>
-      <pre>
+    <h3>Basit Bir HTML Örneği</h3>
+    <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -97,13 +79,9 @@
     &lt;p&gt;Bu, ilk HTML sayfamdır.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-      </pre>
-    </div>
+    </pre>
+
+    <a class="button" href="https://github.com/miracyazilim" target="_blank">GitHub Profilimi Gör</a>
   </div>
-
-  <footer>
-    &copy; 2025 Miracayazılım
-  </footer>
-
 </body>
 </html>
