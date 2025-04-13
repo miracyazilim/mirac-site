@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Mirakayazılım - İlk Web Sitem</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f4f8;
-        color: #333;
-        margin: 0;
-        padding: 40px;
-      }
-      .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      }
-      h1 {
-        color: #007acc;
-      }
-      code {
-        background-color: #f4f4f4;
-        display: block;
-        padding: 10px;
-        border-radius: 5px;
-        white-space: pre;
-        overflow-x: auto;
-        font-family: monospace;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Merhaba, ben Miraç 👋</h1>
-      <p>Bu benim ilk web sitem. Yazılıma ilgim var ve burada kendimi geliştiriyorum.</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Miracayazılım - Ana Sayfa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
 
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #005f99;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Merhaba, ben Miraç 👋</h1>
+    <p>Bu benim ilk web sitem. Yazılıma ilgim var ve burada kendimi geliştiriyorum.</p>
+  </header>
+
+  <nav>
+    <a href="#">Ana Sayfa</a>
+    <a href="#">Hakkımda</a>
+    <a href="#">Projeler</a>
+    <a href="#">İletişim</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
       <h2>HTML Nedir?</h2>
       <p>HTML (HyperText Markup Language), web sayfalarının iskeletini oluşturan işaretleme dilidir. Tarayıcının neyi nasıl göstermesi gerektiğini belirler.</p>
+    </div>
 
+    <div class="card">
       <h2>HTML ile Neler Yapılır?</h2>
       <ul>
         <li>Başlık, paragraf, resim gibi içerikler eklenir</li>
         <li>Bağlantılar (linkler) oluşturulur</li>
         <li>Sayfa yapısı belirlenir</li>
       </ul>
+    </div>
 
+    <div class="card">
       <h2>Basit Bir HTML Örneği</h2>
-      <code>
+      <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -60,7 +97,13 @@
     &lt;p&gt;Bu, ilk HTML sayfamdır.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-      </code>
+      </pre>
     </div>
-  </body>
+  </div>
+
+  <footer>
+    &copy; 2025 Miracayazılım
+  </footer>
+
+</body>
 </html>
