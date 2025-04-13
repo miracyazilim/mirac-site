@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mirakayazılım</title>
-  </head>
-  <body>
-    <h1>Merhaba, ben Miraç 👋</h1>
-    <p>Bu benim ilk web sitem. Yazılıma ilgim var ve burada kendimi geliştiriyorum.</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Miraç Yazılım</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      background-color: #005f73;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0a9396;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Merhaba, ben Miraç 👋</h1>
+  <p>Bu benim ilk web sitem. Yazılıma ilgim var ve burada kendimi geliştiriyorum.</p>
+</header>
+
+<nav>
+  <a href="#">Ana Sayfa</a>
+  <a href="#">Hakkımda</a>
+  <a href="#">Projeler</a>
+</nav>
+
+<div class="container">
+  <div class="card">
     <h2>HTML Nedir?</h2>
     <p>HTML (HyperText Markup Language), web sayfalarının iskeletini oluşturan işaretleme dilidir.</p>
+  </div>
 
+  <div class="card">
     <h2>HTML ile Neler Yapılır?</h2>
     <ul>
       <li>Başlık, paragraf, resim gibi içerikler eklenir</li>
       <li>Bağlantılar (linkler) oluşturulur</li>
       <li>Sayfa yapısı belirlenir</li>
     </ul>
+  </div>
 
+  <div class="card">
     <h2>Basit Bir HTML Örneği</h2>
     <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Benim İlk Web Sayfam&lt;/title&gt;
-  &lt;/head&gt;
+  &lt;head&gt;&lt;title&gt;Benim İlk Web Sayfam&lt;/title&gt;&lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Merhaba Dünya!&lt;/h1&gt;
     &lt;p&gt;Bu, ilk HTML sayfamdır.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
     </pre>
+  </div>
+</div>
 
-    <p><a href="https://github.com/miracyazilim" target="_blank">GitHub Profilimi Gör</a></p>
-  </body>
+</body>
 </html>
